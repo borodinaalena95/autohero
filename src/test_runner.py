@@ -12,7 +12,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.wait import WebDriverWait
 
 SEARCH_URL = 'https://www.autohero.com/de/search/'
-DRIVERS_PATH = '../drivers'
+DRIVERS_PATH = r'../drivers/geckodriver'
 SORT_BY_PRICE_DESC = "2"
 
 
@@ -31,7 +31,7 @@ def main():
 
 
 def init_driver():
-    driver = webdriver.Firefox(DRIVERS_PATH)
+    driver = webdriver.Firefox(executable_path=DRIVERS_PATH)
     driver.get(SEARCH_URL)
     return driver
 

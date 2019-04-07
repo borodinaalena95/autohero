@@ -23,5 +23,7 @@ Run Autotest:
 -
 Type following in command line: 
 
+`cd src`
+
 `python test_runner.py`
 
